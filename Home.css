@@ -16,20 +16,19 @@ ui{list-style: none}
 
 header{
     display: flex;
-    position: fixed;
     justify-content: space-between;
     width: 100%;
     height: 80px;
     padding: 20px 20px;
-    box-shadow: 0 15px 30px rgba(90, 90, 90, 0.1);
-    z-index: 100;
+    box-shadow: 0 15px 30px rgba(123, 123, 123, 0.1);
+    position: fixed;
 }
 .nav{
     align-items: center;
     justify-content: center;
 }
 .nav a{
-    margin: 0px 30px;
+    margin: 0px 40px;
     color: #245f92;
     font-weight: 500;
     font-size: 16px;
@@ -50,7 +49,7 @@ header{
     color: #245f92;
     border: none;
     cursor: pointer;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 .re-btn:hover{
     text-decoration: underline;
@@ -74,21 +73,23 @@ header{
     height: 100vh;
     align-items: center;
     padding: 30px;
-    background: url(image/back-img2.jpg) no-repeat;
+    background: url(image/back-img3.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 .home-container{
-    max-width: 600px;
+    max-width: 700px;
 }
 .home-container h1{
     font-size: 40px;
     margin-top: 80px;
+    line-height: 55px;
 }
 .home-container p{
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-weight: 300;
+    line-height: 32px;
 }
 .home-container button{
     margin-top: 40px;
@@ -100,6 +101,7 @@ header{
     border-radius: 5px;
     color: rgb(255, 255, 255);
     border: none;
+    box-shadow: 0 15px 30px rgba(123, 123, 123, 0.2);
 }
 .read-btn:hover{
     background-color: white;
@@ -113,8 +115,53 @@ header{
     border: 1px solid #3595ef;
     border-radius: 5px;
     padding: 7px 20px;
+    box-shadow: 0 15px 30px rgba(123, 123, 123, 0.2);
 }
 .see-btn:hover{
     background-color: #3595ef;
     color: white;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    padding: 30px;
+    background: url(image/back-img0888.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.container-two{
+    max-width: 800px;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-top: 30px;
+    
+}
+.container-two h1{
+    font-size: 40px;
+}
+#one-p{
+    margin-top: 40px;
+    font-weight: 300;
+    line-height: 32px;
+}
+#two-p{
+    margin-top: 30px;
+    font-weight: 300;
+    line-height: 32px;
+}
+.readmore-btn{
+    margin-top: 32px;
+    background-color: #3595ef;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 0 15px 30px rgba(123, 123, 123, 0.2);
+}
+.readmore-btn:hover{
+    background-color: white;
+    color: #3595ef;
+    border: 1px solid #3595ef;
 }
