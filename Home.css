@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Outfit", sans-serif;
 }
 body{
@@ -15,11 +16,13 @@ ui{list-style: none}
 
 header{
     display: flex;
+    position: fixed;
     justify-content: space-between;
     width: 100%;
-    height: 30PX;
+    height: 80px;
     padding: 20px 20px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(90, 90, 90, 0.1);
+    z-index: 100;
 }
 .nav{
     align-items: center;
@@ -30,29 +33,24 @@ header{
     color: #245f92;
     font-weight: 500;
     font-size: 16px;
+    
 }
 .nav a:hover{
     color: #ffffff;
     font-weight: bold;
     background-color: #245f92;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border-radius: 5px;
 }
 .logo img{
-    width: 30px;
+    width: 40px;
 }
-.header-btn{
-    display: flex;
-    gap: 30px;
-    color: white;
-    margin-right: 50px;
-}
-
 .re-btn{
     background-color: white;
     color: #245f92;
     border: none;
     cursor: pointer;
+    margin-right: 30px;
 }
 .re-btn:hover{
     text-decoration: underline;
@@ -62,7 +60,7 @@ header{
     background-color: #245f92;
     color: white;
     border: none;
-    padding: 0px 20px;
+    padding: 8px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -70,4 +68,53 @@ header{
     background-color: white;
     color: #245f92;
     font-weight: bold;
+}
+.home{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 30px;
+    background: url(image/back-img2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-container{
+    max-width: 600px;
+}
+.home-container h1{
+    font-size: 40px;
+    margin-top: 80px;
+}
+.home-container p{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 300;
+}
+.home-container button{
+    margin-top: 40px;
+    cursor: pointer;
+}
+.read-btn{
+    background-color: #3595ef;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+.read-btn:hover{
+    background-color: white;
+    color: #3595ef;
+    border: 1px solid #3595ef;
+}
+.see-btn{
+    margin-left: 20px;
+    background-color: white;
+    color: #3595ef;
+    border: 1px solid #3595ef;
+    border-radius: 5px;
+    padding: 7px 20px;
+}
+.see-btn:hover{
+    background-color: #3595ef;
+    color: white;
 }
