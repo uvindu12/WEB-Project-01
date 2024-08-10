@@ -227,17 +227,16 @@ header{
 
 .continer-four{
     width: 100%;
-    height: 80vh;
+    height: 60vh;
     align-items: center;
-    padding: 30px;
-    background: url(image/backimg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
 }
-.back-img{
-    text-align: center;
-    color: white;
-    font-size: 20px;
+.back-img video{
+    z-index: 000;
+    top: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: flex;
 }
 .over-layer{
     background-color: rgba(30, 30, 49, 0.344);
